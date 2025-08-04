@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فرصة استثمارية | شركة الجيل الأخضر للتجارة</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="فرصة استثمارية (Series A) في شركة الجيل الأخضر للتجارة، الشركة الرائدة في حلول التكنولوجيا الزراعية في المملكة العربية السعودية. نستهدف جمع 10 مليون ريال لتوسيع عملياتنا.">
+    <meta name="keywords" content="استثمار, تكنولوجيا زراعية, السعودية, رؤية 2030, الجيل الأخضر, زراعة, ثروة حيوانية, AgriTech, Saudi Arabia, Investment, Series A">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ggen.sa/">
+    <meta property="og:title" content="فرصة استثمارية | شركة الجيل الأخضر للتجارة">
+    <meta property="og:description" content="انضم إلينا في جولة استثمارية (Series A) بقيمة 10 مليون ريال لقيادة مستقبل التكنولوجيا الزراعية في المملكة.">
+    <meta property="og:image" content="https://placehold.co/1200x630/4A6A54/FFFFFF?text=GGEN&font=poppins">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.ggen.sa/">
+    <meta property="twitter:title" content="فرصة استثمارية | شركة الجيل الأخضر للتجارة">
+    <meta property="twitter:description" content="انضم إلينا في جولة استثمارية (Series A) بقيمة 10 مليون ريال لقيادة مستقبل التكنولوجيا الزراعية في المملكة.">
+    <meta property="twitter:image" content="https://placehold.co/1200x630/4A6A54/FFFFFF?text=GGEN&font=poppins">
+
+    <!-- Chosen Palette: Earthy Harmony -->
+    <!-- Application Structure Plan: A single-page application with a fixed sidebar navigation for desktop and a top-bar for mobile. This structure allows investors to easily navigate between key sections: The Opportunity, Market Validation (Traction), Expansion Plan, and The Ask. The core of the app is the interactive 'Traction' dashboard, which uses charts to make financial and sales data explorable, providing a more engaging experience than a static document. This design prioritizes usability and a professional, data-driven narrative. -->
+    <!-- Visualization & Content Choices: 
+        - Financial KPIs: Presented as high-impact cards (HTML/Tailwind) to immediately show profitability. Goal: Inform.
+        - Top Selling Products: Horizontal Bar Chart (Chart.js) to clearly compare products with long names. Goal: Compare.
+        - Profit Contribution: Donut Chart (Chart.js) to show the composition of profit. Goal: Compare/Organize.
+        - Sales by City: Vertical Bar Chart (Chart.js) to display geographic reach. Goal: Show Relationships.
+        - Use of Funds: Donut Chart (Chart.js) to transparently show capital allocation. Goal: Inform/Organize.
+        - Expansion Plan: A 4-quadrant grid (HTML/Tailwind) with Unicode icons to present the strategy in digestible chunks. Goal: Organize.
+        All interactions are hover-based tooltips, providing details on demand without cluttering the UI. This supports the designed structure by making data exploration intuitive.
+    -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --font-ar: 'Tajawal', sans-serif;
+            --font-en: 'Poppins', sans-serif;
+        }
+        body {
+            font-family: var(--font-ar);
+            scroll-behavior: smooth;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        @media (max-width: 768px) {
+            .chart-container {
+                height: 300px;
+            }
+        }
+        .bg-gradient-main {
+            background: linear-gradient(120deg, #f7f3e9, #e8f0e6);
+        }
+        .bg-card {
+            background-color: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .nav-link.active {
+            background-color: #3A5A40;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="flex flex-col md:flex-row">
+        <!-- Sidebar Navigation -->
+        <nav id="sidebar" class="fixed top-0 start-0 h-full bg-[#4A6A54] text-white w-64 transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out z-40 flex flex-col">
+            <div class="p-4 text-center">
+                <img src="src/images/GGEN.png" alt="GGEN Logo" class="mx-auto rounded-md">
+            </div>
+            <ul class="mt-8 space-y-2 px-4 flex-grow">
+                <li><a href="#hero" class="nav-link block w-full text-start py-3 px-4 rounded-lg hover:bg-green-700 transition-colors" data-i18n-key="navOpportunity">الفرصة الاستثمارية</a></li>
+                <li><a href="#traction" class="nav-link block w-full text-start py-3 px-4 rounded-lg hover:bg-green-700 transition-colors" data-i18n-key="navTraction">الأداء والنمو</a></li>
+                <li><a href="#expansion" class="nav-link block w-full text-start py-3 px-4 rounded-lg hover:bg-green-700 transition-colors" data-i18n-key="navExpansion">خطة التوسع</a></li>
+                <li><a href="#team" class="nav-link block w-full text-start py-3 px-4 rounded-lg hover:bg-green-700 transition-colors" data-i18n-key="navTeam">الفريق المؤسس</a></li>
+                <li><a href="#ask" class="nav-link block w-full text-start py-3 px-4 rounded-lg hover:bg-green-700 transition-colors" data-i18n-key="navAsk">متطلبات الاستثمار</a></li>
+            </ul>
+            <div class="p-4 mt-4">
+                <button id="lang-toggle" class="w-full py-2 px-4 rounded-lg bg-green-700 hover:bg-green-800 transition-colors text-white font-semibold">
+                    English
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Header -->
+        <header class="md:hidden fixed top-0 left-0 right-0 bg-white shadow-md p-4 z-30 flex justify-between items-center">
+             <img src="src/images/GGEN.png" alt="GGEN Logo" class="h-8 w-auto">
+            <button id="menu-toggle" class="text-[#4A6A54] text-2xl">
+                ☰
+            </button>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-1 md:ms-64 transition-all duration-300">
+            
+            <!-- Hero Section -->
+            <section id="hero" class="min-h-screen flex items-center justify-center p-8 bg-gradient-main">
+                <div class="text-center max-w-4xl">
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-[#3A5A40] leading-tight" data-i18n-key="heroTitle">فرصة استثمارية لريادة مستقبل التكنولوجيا الزراعية في المملكة</h1>
+                    <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto" data-i18n-key="heroSubtitle">
+                        شركة الجيل الأخضر للتجارة، بعد إثبات نجاح نموذج عملها الأولي، تفتح الآن جولتها الاستثمارية (Series A) لدفع عجلة التوسع والسيطرة على سوق واعد.
+                    </p>
+                    <div class="mt-12 bg-card rounded-2xl shadow-lg p-8 inline-block">
+                        <h3 class="text-2xl font-bold text-gray-700" data-i18n-key="askTitle">الاستثمار المطلوب</h3>
+                        <p class="mt-2 text-5xl font-extrabold text-[#4A6A54]">10,000,000 <span data-i18n-key="currency">ريال سعودي</span></p>
+                        <p class="mt-2 text-2xl font-bold text-gray-600" data-i18n-key="askStake">مقابل حصة 10%</p>
+                        <p class="mt-1 text-sm text-gray-500" data-i18n-key="askValuation">(تقييم قبلي: 90 مليون ريال)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Traction Section -->
+            <section id="traction" class="py-20 px-6 lg:px-12 bg-white">
+                <div class="max-w-7xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-extrabold text-[#3A5A40]" data-i18n-key="tractionTitle">أداء مثبت ونمو متسارع</h2>
+                        <p class="mt-4 text-lg text-gray-600" data-i18n-key="tractionSubtitle">الأرقام تتحدث عن نفسها. لقد حققنا بداية قوية تؤكد وجود طلب حقيقي ومستدام على منتجاتنا ونموذج عمل مربح للغاية.</p>
+                    </div>
+
+                    <!-- Timeline -->
+                    <div class="max-w-3xl mx-auto mb-16">
+                        <div class="flex items-center">
+                            <div class="flex flex-col items-center text-center w-1/3">
+                                <div class="w-16 h-16 rounded-full bg-[#4A6A54] text-white flex items-center justify-center text-2xl mb-2">📅</div>
+                                <h4 class="font-bold" data-i18n-key="timelineFounded">التأسيس</h4>
+                                <p class="text-sm text-gray-500" data-i18n-key="timelineDateFounded">4 يناير 2025</p>
+                            </div>
+                            <div class="flex-1 h-1 bg-gray-200 rounded-full"></div>
+                             <div class="flex flex-col items-center text-center w-1/3">
+                                <div class="w-16 h-16 rounded-full bg-[#4A6A54] text-white flex items-center justify-center text-2xl mb-2">🚀</div>
+                                <h4 class="font-bold" data-i18n-key="timelineLaunch">بدء المبيعات</h4>
+                                <p class="text-sm text-gray-500" data-i18n-key="timelineDateLaunch">1 مايو 2025</p>
+                            </div>
+                            <div class="flex-1 h-1 bg-gray-200 rounded-full"></div>
+                             <div class="flex flex-col items-center text-center w-1/3">
+                                <div class="w-16 h-16 rounded-full bg-green-700 text-white flex items-center justify-center text-2xl mb-2">📈</div>
+                                <h4 class="font-bold" data-i18n-key="timelineTraction">3 أشهر من النمو</h4>
+                                <p class="text-sm text-gray-500" data-i18n-key="timelineDateTraction">مايو - أغسطس 2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KPIs -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 text-center">
+                        <div class="bg-card p-8 rounded-2xl shadow-lg">
+                            <h4 class="text-xl font-bold text-gray-600" data-i18n-key="kpiSales">إجمالي المبيعات</h4>
+                            <p class="text-4xl font-extrabold text-[#4A6A54] mt-2">27,224 <span class="text-2xl" data-i18n-key="currency">ر.س</span></p>
+                        </div>
+                        <div class="bg-card p-8 rounded-2xl shadow-lg">
+                            <h4 class="text-xl font-bold text-gray-600" data-i18n-key="kpiProfit">إجمالي الربح</h4>
+                            <p class="text-4xl font-extrabold text-[#4A6A54] mt-2">14,744 <span class="text-2xl" data-i18n-key="currency">ر.س</span></p>
+                        </div>
+                        <div class="bg-card p-8 rounded-2xl shadow-lg">
+                            <h4 class="text-xl font-bold text-gray-600" data-i18n-key="kpiMargin">هامش الربح الإجمالي</h4>
+                            <p class="text-4xl font-extrabold text-[#4A6A54] mt-2">~54.2%</p>
+                        </div>
+                    </div>
+
+                    <!-- Charts -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div class="bg-card p-6 rounded-2xl shadow-lg">
+                            <h3 class="text-2xl font-bold text-center mb-4 text-[#3A5A40]" data-i18n-key="chartTopSelling">المنتجات الأعلى مبيعاً (بالوحدات)</h3>
+                            <div class="chart-container">
+                                <canvas id="topSellingChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="bg-card p-6 rounded-2xl shadow-lg">
+                            <h3 class="text-2xl font-bold text-center mb-4 text-[#3A5A40]" data-i18n-key="chartTopProfit">المنتجات الأعلى ربحية</h3>
+                            <div class="chart-container">
+                                <canvas id="topProfitChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="bg-card p-6 rounded-2xl shadow-lg lg:col-span-2">
+                             <h3 class="text-2xl font-bold text-center mb-4 text-[#3A5A40]" data-i18n-key="chartGeoSpread">الانتشار الجغرافي (أعلى 10 مدن بالمبيعات)</h3>
+                            <div class="chart-container h-[400px] max-h-[450px]">
+                                <canvas id="salesByCityChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Expansion Plan Section -->
+            <section id="expansion" class="py-20 px-6 lg:px-12 bg-gradient-main">
+                <div class="max-w-7xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl font-extrabold text-[#3A5A40]" data-i18n-key="expansionTitle">خطة التوسع الاستراتيجية</h2>
+                        <p class="mt-4 text-lg text-gray-600" data-i18n-key="expansionSubtitle">هذا الاستثمار سيمكننا من تحقيق قفزة نوعية والانتقال من شركة ناشئة إلى لاعب رئيسي في السوق عبر أربعة محاور متكاملة.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                        <div class="bg-card p-8 rounded-2xl shadow-lg text-center h-full">
+                            <div class="text-5xl text-[#4A6A54] mb-4">🏢</div>
+                            <h3 class="text-xl font-bold mb-2" data-i18n-key="expGeoTitle">التوسع الجغرافي</h3>
+                            <p class="text-gray-600" data-i18n-key="expGeoDesc">افتتاح معارض في المدن الكبرى (الرياض، جدة، الدمام) لتعزيز المبيعات المباشرة وتقديم دعم لوجستي سريع.</p>
+                        </div>
+                        <div class="bg-card p-8 rounded-2xl shadow-lg text-center h-full">
+                            <div class="text-5xl text-[#4A6A54] mb-4">⚙️</div>
+                            <h3 class="text-xl font-bold mb-2" data-i18n-key="expProdTitle">توسيع خطوط الإنتاج</h3>
+                            <p class="text-gray-600" data-i18n-key="expProdDesc">تصنيع أجهزة بسترة الحليب وخضاضات اللبن لتلبية احتياجات عملائنا وتقديم حلول متكاملة.</p>
+                        </div>
+                        <div class="bg-card p-8 rounded-2xl shadow-lg text-center h-full">
+                            <div class="text-5xl text-[#4A6A54] mb-4">💉</div>
+                            <h3 class="text-xl font-bold mb-2" data-i18n-key="expHealthTitle">دخول قطاع الصحة الحيوانية</h3>
+                            <p class="text-gray-600" data-i18n-key="expHealthDesc">توفير لقاحات حيوانية عالية الجودة عبر شراكات استراتيجية لفتح مصدر إيرادات جديد ومهم.</p>
+                        </div>
+                    <div class="bg-card p-8 rounded-2xl shadow-lg text-center h-full">
+                        <img src="src/images/GGEN.png" alt="تعزيز العلامة التجارية" class="w-20 h-20 mx-auto mb-4">
+                        <h3 class="text-xl font-bold mb-2" data-i18n-key="expBrandTitle">تعزيز العلامة التجارية</h3>
+                        <p class="text-gray-600" data-i18n-key="expBrandDesc">إطلاق مجموعة أدوات زراعية وحيوانية تحت علامتنا التجارية لترسيخ مكانتنا كوجهة أولى للمزارع الحديث.</p>
+                    </div>
+                    </div>
+                    
+                    <div class="bg-card p-8 rounded-2xl shadow-lg mt-16">
+                        <h3 class="text-3xl font-bold text-center mb-6 text-[#3A5A40]" data-i18n-key="chartUseOfFunds">كيفية استخدام التمويل (10 مليون ريال)</h3>
+                         <div class="chart-container h-[400px] max-h-[450px]">
+                            <canvas id="useOfFundsChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Team Section -->
+            <section id="team" class="py-20 px-6 lg:px-12 bg-white">
+                 <div class="max-w-5xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl font-extrabold text-[#3A5A40]" data-i18n-key="teamTitle">الفريق المؤسس</h2>
+                        <p class="mt-4 text-lg text-gray-600" data-i18n-key="teamSubtitle">يقود الشركة فريق يجمع بين الخبرة الإدارية العميقة، الشغف بالابتكار، والرؤية الاستراتيجية الطموحة.</p>
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-10">
+                        <div class="text-center">
+                            <div class="w-40 h-40 bg-gradient-to-br from-green-200 to-green-400 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <span class="text-6xl">👨‍💼</span>
+                            </div>
+                            <h3 class="text-2xl font-bold" data-i18n-key="teamMember1Name">حمدان محمد الغامدي</h3>
+                            <p class="text-gray-500" data-i18n-key="teamMember1Role">الرئيس التنفيذي</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-40 h-40 bg-gradient-to-br from-green-200 to-green-400 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <span class="text-6xl">👨‍💻</span>
+                            </div>
+                            <h3 class="text-2xl font-bold" data-i18n-key="teamMember2Name">محمد صالح الغامدي</h3>
+                            <p class="text-gray-500" data-i18n-key="teamMember2Role">رئيس العمليات</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-40 h-40 bg-gradient-to-br from-green-200 to-green-400 rounded-full mx-auto mb-4 flex items-center justify-center">
+                               <span class="text-6xl">🤝</span>
+                            </div>
+                            <h3 class="text-2xl font-bold" data-i18n-key="teamMember3Name">خالد عبدالرحمن العودة</h3>
+                            <p class="text-gray-500" data-i18n-key="teamMember3Role">شريك</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- The Ask Section -->
+            <section id="ask" class="py-20 px-6 lg:px-12 bg-gray-800 text-white">
+                <div class="max-w-4xl mx-auto text-center">
+                     <h2 class="text-4xl font-extrabold" data-i18n-key="finalAskTitle">جاهزون لتكونوا جزءاً من قصة النجاح؟</h2>
+                     <p class="mt-4 text-lg text-gray-300" data-i18n-key="finalAskSubtitle">ندعوكم للانضمام إلينا في هذه الرحلة الواعدة لإحداث ثورة في القطاع الزراعي بالمملكة.</p>
+                     <div class="mt-12 bg-white/10 backdrop-blur-sm rounded-2xl shadow-lg p-8 inline-block border border-white/20">
+                        <h3 class="text-2xl font-bold text-white" data-i18n-key="askTitle">الاستثمار المطلوب</h3>
+                        <p class="mt-2 text-5xl font-extrabold text-green-300">10,000,000 <span data-i18n-key="currency">ريال سعودي</span></p>
+                        <p class="mt-2 text-2xl font-bold text-gray-200" data-i18n-key="askStake">مقابل حصة 10%</p>
+                    </div>
+                    <div class="mt-12">
+                         <h3 class="text-2xl font-bold" data-i18n-key="contactTitle">للتواصل ومناقشة الفرصة</h3>
+                         <p class="mt-2 text-lg text-green-300">info@ggen.sa</p>
+                         <p class="mt-1 text-lg text-gray-300">www.ggen.sa</p>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-xl font-bold" data-i18n-key="socialTitle">تابعونا على</h3>
+                        <div class="flex justify-center items-center gap-6 mt-4">
+                            <a href="https://x.com/Ggen_Store" target="_blank" rel="noopener noreferrer" aria-label="X Account" class="text-3xl text-gray-300 hover:text-white transition-colors">𝕏</a>
+                            <a href="https://www.tiktok.com/@ggenstore" target="_blank" rel="noopener noreferrer" aria-label="TikTok Account" class="text-3xl text-gray-300 hover:text-white transition-colors">
+                                <canvas class="w-8 h-8" id="tiktok-icon"></canvas>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const i18n = {
+                ar: {
+                    companyName: "الجيل الأخضر",
+                    companySubName: "للتجارة",
+                    navOpportunity: "الفرصة الاستثمارية",
+                    navTraction: "الأداء والنمو",
+                    navExpansion: "خطة التوسع",
+                    navTeam: "الفريق المؤسس",
+                    navAsk: "متطلبات الاستثمار",
+                    heroTitle: "فرصة استثمارية لريادة مستقبل التكنولوجيا الزراعية في المملكة",
+                    heroSubtitle: "شركة الجيل الأخضر للتجارة، بعد إثبات نجاح نموذج عملها الأولي، تفتح الآن جولتها الاستثمارية (Series A) لدفع عجلة التوسع والسيطرة على سوق واعد.",
+                    askTitle: "الاستثمار المطلوب",
+                    currency: "ريال سعودي",
+                    askStake: "مقابل حصة 10%",
+                    askValuation: "(تقييم قبلي: 90 مليون ريال)",
+                    tractionTitle: "أداء مثبت ونمو متسارع",
+                    tractionSubtitle: "الأرقام تتحدث عن نفسها. لقد حققنا بداية قوية تؤكد وجود طلب حقيقي ومستدام على منتجاتنا ونموذج عمل مربح للغاية.",
+                    timelineFounded: "التأسيس",
+                    timelineDateFounded: "4 يناير 2025",
+                    timelineLaunch: "بدء المبيعات",
+                    timelineDateLaunch: "1 مايو 2025",
+                    timelineTraction: "3 أشهر من النمو",
+                    timelineDateTraction: "مايو - أغسطس 2025",
+                    kpiSales: "إجمالي المبيعات",
+                    kpiProfit: "إجمالي الربح",
+                    kpiMargin: "هامش الربح الإجمالي",
+                    chartTopSelling: "المنتجات الأعلى مبيعاً (بالوحدات)",
+                    chartTopProfit: "المنتجات الأعلى ربحية",
+                    chartGeoSpread: "الانتشار الجغرافي (أعلى 10 مدن بالمبيعات)",
+                    chartUseOfFunds: "كيفية استخدام التمويل (10 مليون ريال)",
+                    expansionTitle: "خطة التوسع الاستراتيجية",
+                    expansionSubtitle: "هذا الاستثمار سيمكننا من تحقيق قفزة نوعية والانتقال من شركة ناشئة إلى لاعب رئيسي في السوق عبر أربعة محاور متكاملة.",
+                    expGeoTitle: "التوسع الجغرافي",
+                    expGeoDesc: "افتتاح معارض في المدن الكبرى (الرياض، جدة، الدمام) لتعزيز المبيعات المباشرة وتقديم دعم لوجستي سريع.",
+                    expProdTitle: "توسيع خطوط الإنتاج",
+                    expProdDesc: "تصنيع أجهزة بسترة الحليب وخضاضات اللبن لتلبية احتياجات عملائنا وتقديم حلول متكاملة.",
+                    expHealthTitle: "دخول قطاع الصحة الحيوانية",
+                    expHealthDesc: "توفير لقاحات حيوانية عالية الجودة عبر شراكات استراتيجية لفتح مصدر إيرادات جديد ومهم.",
+                    expBrandTitle: "تعزيز العلامة التجارية",
+                    expBrandDesc: "إطلاق مجموعة أدوات زراعية وحيوانية تحت علامتنا التجارية لترسيخ مكانتنا كوجهة أولى للمزارع الحديث.",
+                    teamTitle: "الفريق المؤسس",
+                    teamSubtitle: "يقود الشركة فريق يجمع بين الخبرة الإدارية العميقة، الشغف بالابتكار، والرؤية الاستراتيجية الطموحة.",
+                    teamMember1Name: "حمدان محمد الغامدي",
+                    teamMember1Role: "الرئيس التنفيذي",
+                    teamMember2Name: "محمد صالح الغامدي",
+                    teamMember2Role: "رئيس العمليات",
+                    teamMember3Name: "خالد عبدالرحمن العودة",
+                    teamMember3Role: "شريك",
+                    finalAskTitle: "جاهزون لتكونوا جزءاً من قصة النجاح؟",
+                    finalAskSubtitle: "ندعوكم للانضمام إلينا في هذه الرحلة الواعدة لإحداث ثورة في القطاع الزراعي بالمملكة.",
+                    contactTitle: "للتواصل ومناقشة الفرصة",
+                    socialTitle: "تابعونا على",
+                    langButton: "English",
+                    chartLabelSold: "الكمية المباعة",
+                    chartLabelProfit: "الأرباح (ر.س)",
+                    chartLabelSales: "إجمالي المبيعات (ر.س)",
+                    chartLabelFund: "توزيع التمويل (ر.س)",
+                    product1: "حلابة أغنام (8 لتر)",
+                    product2: "حلابة أبقار وإبل (12 لتر)",
+                    product3: "حلابة أغنام (12 لتر)",
+                    product4: "رؤوس شفط للأبقار",
+                    product5: "رؤوس شفط للأغنام",
+                    product6: "حلابة أبقار وإبل (2 رأس)",
+                    otherProducts: "منتجات أخرى",
+                    fund1: "التوسع في المنتجات والتصنيع",
+                    fund2: "التوسع الجغرافي والتسويق",
+                    fund3: "الشراكات وتوفير اللقاحات",
+                    fund4: "تطوير العمليات والتقنية",
+                },
+                en: {
+                    companyName: "Green Generation",
+                    companySubName: "Trading Co.",
+                    navOpportunity: "The Opportunity",
+                    navTraction: "Traction & Growth",
+                    navExpansion: "Expansion Plan",
+                    navTeam: "Founding Team",
+                    navAsk: "The Ask",
+                    heroTitle: "An Investment Opportunity to Lead the Future of AgriTech in KSA",
+                    heroSubtitle: "After proving its initial business model, Green Generation Trading Co. is now opening its Series A round to fuel expansion and dominate a promising market.",
+                    askTitle: "The Investment Ask",
+                    currency: "SAR",
+                    askStake: "for a 10% stake",
+                    askValuation: "(Pre-money valuation: 90M SAR)",
+                    tractionTitle: "Proven Performance & Rapid Growth",
+                    tractionSubtitle: "The numbers speak for themselves. We've had a strong start that confirms real, sustainable demand and a highly profitable business model.",
+                    timelineFounded: "Founded",
+                    timelineDateFounded: "Jan 4, 2025",
+                    timelineLaunch: "Sales Launch",
+                    timelineDateLaunch: "May 1, 2025",
+                    timelineTraction: "3 Months of Growth",
+                    timelineDateTraction: "May - Aug 2025",
+                    kpiSales: "Total Sales",
+                    kpiProfit: "Gross Profit",
+                    kpiMargin: "Gross Profit Margin",
+                    chartTopSelling: "Top Selling Products (by Units)",
+                    chartTopProfit: "Most Profitable Products",
+                    chartGeoSpread: "Geographic Spread (Top 10 Cities by Sales)",
+                    chartUseOfFunds: "Use of Funds (10M SAR)",
+                    expansionTitle: "Strategic Expansion Plan",
+                    expansionSubtitle: "This investment will enable a quantum leap, transforming us from a startup into a key market player across four integrated pillars.",
+                    expGeoTitle: "Geographic Expansion",
+                    expGeoDesc: "Opening showrooms in major cities (Riyadh, Jeddah, Dammam) to boost direct sales and provide rapid logistics support.",
+                    expProdTitle: "Product Line Expansion",
+                    expProdDesc: "Manufacturing milk pasteurizers and butter churns to meet our customers' integrated needs and offer complete solutions.",
+                    expHealthTitle: "Entering Animal Health Sector",
+                    expHealthDesc: "Providing high-quality animal vaccines through strategic partnerships to open a new, significant revenue stream.",
+                    expBrandTitle: "Strengthening the Brand",
+                    expBrandDesc: "Launching a wide range of agricultural and livestock tools under our brand to solidify our position as the go-to destination.",
+                    teamTitle: "The Founding Team",
+                    teamSubtitle: "The company is led by a team that combines deep management experience, a passion for innovation, and an ambitious strategic vision.",
+                    teamMember1Name: "Hamdan Mohammed Al-Ghamdi",
+                    teamMember1Role: "Chief Executive Officer",
+                    teamMember2Name: "Mohammed Saleh Al-Ghamdi",
+                    teamMember2Role: "Chief Operating Officer",
+                    teamMember3Name: "Khaled Abdulrahman Al-Oudah",
+                    teamMember3Role: "Partner",
+                    finalAskTitle: "Ready to be part of the success story?",
+                    finalAskSubtitle: "We invite you to join us on this promising journey to revolutionize the agricultural sector in the Kingdom.",
+                    contactTitle: "To connect and discuss the opportunity",
+                    socialTitle: "Follow us on",
+                    langButton: "العربية",
+                    chartLabelSold: "Units Sold",
+                    chartLabelProfit: "Profit (SAR)",
+                    chartLabelSales: "Total Sales (SAR)",
+                    chartLabelFund: "Funding Allocation (SAR)",
+                    product1: "Sheep Milker (8L)",
+                    product2: "Cow/Camel Milker (12L)",
+                    product3: "Sheep Milker (12L)",
+                    product4: "Cow Suction Heads",
+                    product5: "Sheep Suction Heads",
+                    product6: "Cow/Camel Milker (2 Heads)",
+                    otherProducts: "Other Products",
+                    fund1: "Product & Manufacturing Expansion",
+                    fund2: "Geographic Expansion & Marketing",
+                    fund3: "Partnerships & Vaccine Supply",
+                    fund4: "Operations & Tech Development",
+                }
+            };
+
+            let currentLang = 'ar';
+            let charts = {};
+
+            const setLanguage = (lang) => {
+                currentLang = lang;
+                document.documentElement.lang = lang;
+                document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+                document.body.style.fontFamily = lang === 'ar' ? 'var(--font-ar)' : 'var(--font-en)';
+
+                document.querySelectorAll('[data-i18n-key]').forEach(element => {
+                    const key = element.getAttribute('data-i18n-key');
+                    if (i18n[lang][key]) {
+                        element.innerHTML = i18n[lang][key];
+                    }
+                });
+
+                document.getElementById('lang-toggle').textContent = i18n[currentLang].langButton;
+                renderAllCharts(lang);
+            };
+
+            const langToggle = document.getElementById('lang-toggle');
+            langToggle.addEventListener('click', () => {
+                const newLang = currentLang === 'ar' ? 'en' : 'ar';
+                setLanguage(newLang);
+            });
+
+            const menuToggle = document.getElementById('menu-toggle');
+            const sidebar = document.getElementById('sidebar');
+            menuToggle.addEventListener('click', () => sidebar.classList.toggle('-translate-x-full'));
+            
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    if(!sidebar.classList.contains('-translate-x-full') && window.innerWidth < 768) {
+                       sidebar.classList.add('-translate-x-full');
+                    }
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    if (pageYOffset >= section.offsetTop - 100) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            const renderAllCharts = (lang) => {
+                const chartFont = {
+                    family: lang === 'ar' ? 'var(--font-ar)' : 'var(--font-en)',
+                };
+                
+                const destroyChart = (chartId) => {
+                    if (charts[chartId]) {
+                        charts[chartId].destroy();
+                    }
+                };
+
+                // Chart 1
+                destroyChart('topSelling');
+                const topSellingCtx = document.getElementById('topSellingChart').getContext('2d');
+                charts.topSelling = new Chart(topSellingCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: [i18n[lang].product1, i18n[lang].product2, i18n[lang].product3, i18n[lang].product4, i18n[lang].product5, i18n[lang].product6],
+                        datasets: [{ label: i18n[lang].chartLabelSold, data: [13, 11, 5, 4, 2, 1], backgroundColor: '#4A6A54', borderRadius: 5 }]
+                    },
+                    options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { bodyFont: chartFont, titleFont: chartFont } }, scales: { x: { ticks: { font: chartFont }, grid: { display: false } }, y: { ticks: { font: chartFont, autoSkip: false } } } }
+                });
+
+                // Chart 2
+                destroyChart('topProfit');
+                const topProfitCtx = document.getElementById('topProfitChart').getContext('2d');
+                charts.topProfit = new Chart(topProfitCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: [i18n[lang].product1, i18n[lang].product2, i18n[lang].product3, i18n[lang].otherProducts],
+                        datasets: [{ label: i18n[lang].chartLabelProfit, data: [6478, 5953, 2677, 919], backgroundColor: ['#3A5A40', '#588157', '#A3B18A', '#DAD7CD'], borderColor: '#ffffff', borderWidth: 2 }]
+                    },
+                    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { font: chartFont } }, tooltip: { bodyFont: chartFont, titleFont: chartFont } } }
+                });
+
+                // Chart 3
+                destroyChart('salesByCity');
+                const salesByCityCtx = document.getElementById('salesByCityChart').getContext('2d');
+                charts.salesByCity = new Chart(salesByCityCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['الرياض', 'الباحة', 'الخرج', 'أبها', 'بريدة', 'تربة', 'عرعر', 'أحد رفيدة', 'عنيزة', 'طبرجل'],
+                        datasets: [{ label: i18n[lang].chartLabelSales, data: [4173.15, 2521, 1716.2, 1634.1, 1399, 1202, 998, 997, 990, 987.02], backgroundColor: '#4A6A54', borderRadius: 5 }]
+                    },
+                    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { bodyFont: chartFont, titleFont: chartFont } }, scales: { x: { ticks: { font: chartFont } }, y: { ticks: { font: chartFont }, grid: { display: false } } } }
+                });
+
+                // Chart 4
+                destroyChart('useOfFunds');
+                const useOfFundsCtx = document.getElementById('useOfFundsChart').getContext('2d');
+                charts.useOfFunds = new Chart(useOfFundsCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: [i18n[lang].fund1, i18n[lang].fund2, i18n[lang].fund3, i18n[lang].fund4],
+                        datasets: [{ label: i18n[lang].chartLabelFund, data: [4000000, 3000000, 2000000, 1000000], backgroundColor: ['#3A5A40', '#588157', '#A3B18A', '#DAD7CD'], borderColor: '#ffffff', borderWidth: 2 }]
+                    },
+                    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { font: chartFont, padding: 20 } }, tooltip: { bodyFont: chartFont, titleFont: chartFont, callbacks: { label: (c) => `${c.label}: ${new Intl.NumberFormat(lang + '-SA', { style: 'currency', currency: 'SAR' }).format(c.parsed)}` } } } }
+                });
+            };
+
+            // TikTok Icon
+            const tiktokCanvas = document.getElementById('tiktok-icon');
+            if (tiktokCanvas) {
+                const ctx = tiktokCanvas.getContext('2d');
+                const dpr = window.devicePixelRatio || 1;
+                tiktokCanvas.width = 32 * dpr;
+                tiktokCanvas.height = 32 * dpr;
+                ctx.scale(dpr, dpr);
+                ctx.strokeStyle = '#D1D5DB';
+                ctx.lineWidth = 2.5;
+                ctx.lineCap = 'round';
+                ctx.beginPath();
+                ctx.moveTo(13, 4);
+                ctx.lineTo(13, 20);
+                ctx.arcTo(13, 25, 8, 25, 5);
+                ctx.arcTo(3, 25, 3, 20, 5);
+                ctx.moveTo(20, 4);
+                ctx.lineTo(20, 16);
+                ctx.arc(16, 16, 4, 0, Math.PI);
+                ctx.stroke();
+            }
+
+            setLanguage('ar'); 
+        });
+    </script>
+</body>
+</html>
