@@ -1,53 +1,53 @@
-# GreenGenerationالعرض التقديمي التفاعلي للجولة الاستثمارية (Series A) لشركة الجيل الأخضر
-هذا المستودع يحتوي على الشيفرة المصدرية لتطبيق الويب التفاعلي أحادي الصفحة (SPA) المصمم خصيصًا لعرض الفرصة الاستثمارية من الفئة "أ" (Series A) لشركة الجيل الأخضر للتجارة. تم بناء هذا التطبيق لتقديم قصة الشركة، وأدائها المالي، وخططها التوسعية بطريقة جذابة ومقنعة للمستثمرين المحتملين.
+Interactive Pitch Deck for Green Generation's Series A Round
+This repository contains the source code for the interactive single-page application (SPA) designed specifically to present the Series A investment opportunity for Green Generation Trading Co. This application was built to showcase the company's story, financial performance, and expansion plans in an engaging and compelling way for potential investors.
 
-🚀 نظرة عامة على المشروع
-الهدف من هذا التطبيق هو تحويل العرض الاستثماري التقليدي إلى تجربة رقمية تفاعلية. بدلاً من عرض الشرائح الثابتة، يمكن للمستثمرين استكشاف البيانات المالية، والتعرف على المنتجات، وفهم خطط النمو بشكل ديناميكي، مما يوفر رؤية أعمق وأكثر تأثيراً.
+🚀 Project Overview
+The goal of this application is to transform a traditional investment pitch into an interactive digital experience. Instead of static slides, investors can explore financial data, learn about products, and understand growth plans dynamically, providing a deeper and more impactful insight.
 
-يمكن معاينة النسخة الحية من هنا: [رابط العرض الحي - إذا تم نشره]
+A live preview can be viewed here: [Live Demo Link - if published]
 
-✨ الميزات الرئيسية
-لوحة تحكم تفاعلية: عرض مؤشرات الأداء الرئيسية (KPIs) والبيانات المالية من خلال رسوم بيانية ديناميكية باستخدام Chart.js.
+✨ Key Features
+Interactive Dashboard: Displays Key Performance Indicators (KPIs) and financial data through dynamic charts using Chart.js.
 
-دعم متعدد اللغات: واجهة مستخدم قابلة للتحويل بالكامل بين اللغتين العربية والإنجليزية لتناسب المستثمرين المحليين والدوليين.
+Multi-language Support: A fully convertible user interface between Arabic and English to suit local and international investors.
 
-تصميم متجاوب: تجربة مستخدم سلسة ومثالية على جميع الأجهزة، من الحواسيب المكتبية إلى الأجهزة اللوحية والهواتف المحمولة.
+Responsive Design: A seamless and optimal user experience across all devices, from desktops to tablets and mobile phones.
 
-قصة نمو واضحة: خط زمني يبرز سرعة الانتقال من مرحلة التأسيس إلى تحقيق المبيعات، مما يؤكد على وجود طلب قوي في السوق.
+Clear Growth Story: A timeline that highlights the rapid transition from founding to achieving sales, confirming strong market demand.
 
-تحسين محركات البحث (SEO): تم تضمين وسوم meta أساسية لتعزيز ظهور الصفحة على محركات البحث.
+Search Engine Optimization (SEO): Basic meta tags have been included to enhance the page's visibility on search engines.
 
-هوية بصرية متكاملة: يتضمن شعار الشركة وروابط منصات التواصل الاجتماعي لتعزيز العلامة التجارية.
+Integrated Visual Identity: Includes the company logo and social media links to strengthen the brand.
 
-بنية أحادية الصفحة (SPA): سهولة التنقل بين جميع الأقسام دون الحاجة إلى إعادة تحميل الصفحة.
+Single-Page Application (SPA) Architecture: Easy navigation between all sections without needing to reload the page.
 
-🛠️ التقنيات المستخدمة
-تم بناء هذا المشروع بالكامل باستخدام تقنيات الويب الأساسية، مما يجعله خفيفاً وسريعاً وسهل الصيانة.
+🛠️ Technologies Used
+This project is built entirely with core web technologies, making it lightweight, fast, and easy to maintain.
 
-HTML5: لهيكلة المحتوى بشكل دلالي.
+HTML5: For semantic content structuring.
 
-Tailwind CSS: لإطار عمل تصميمي سريع ومتجاوب.
+Tailwind CSS: For a rapid and responsive design framework.
 
-JavaScript (Vanilla): لإدارة جميع التفاعلات، وتحديث المحتوى، والتحكم في حالة التطبيق (مثل تبديل اللغة).
+JavaScript (Vanilla): To manage all interactions, update content, and control the application's state (like language switching).
 
-Chart.js: لإنشاء رسوم بيانية تفاعلية وجذابة بصرياً.
+Chart.js: For creating interactive and visually appealing charts.
 
-📈 الأقسام الرئيسية للتطبيق
-الفرصة الاستثمارية (#hero): عرض موجز ومقنع للفرصة الاستثمارية والمبلغ المطلوب.
+📈 Main Application Sections
+The Opportunity (#hero): A brief and compelling overview of the investment opportunity and the amount requested.
 
-الأداء والنمو (#traction): قسم تفاعلي يعرض مؤشرات الأداء المالي، والجدول الزمني للنمو، وأداء المنتجات، والانتشار الجغرافي.
+Traction & Growth (#traction): An interactive section displaying financial KPIs, the growth timeline, product performance, and geographic spread.
 
-خطة التوسع (#expansion): عرض استراتيجي للمحاور الأربعة الرئيسية لخطة النمو وكيفية استخدام التمويل.
+Expansion Plan (#expansion): A strategic presentation of the four main pillars of the growth plan and the use of funds.
 
-الفريق المؤسس (#team): تعريف بالفريق الذي يقود الشركة.
+Founding Team (#team): An introduction to the team leading the company.
 
-متطلبات الاستثمار (#ask): دعوة أخيرة للاستثمار مع معلومات التواصل وروابط المنصات الاجتماعية.
+The Ask (#ask): A final call to invest, with contact information and social media links.
 
-📞 معلومات التواصل
-البريد الإلكتروني: info@ggen.sa
+📞 Contact Information
+Email: info@ggen.sa
 
-الموقع الإلكتروني: www.ggen.sa
+Website: www.ggen.sa
 
-X (تويتر سابقاً): @Ggen_Store
+X (formerly Twitter): @Ggen_Store
 
 TikTok: @ggenstore
