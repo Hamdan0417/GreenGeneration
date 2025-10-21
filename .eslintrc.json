@@ -1,0 +1,11 @@
+{
+  "extends": ["next/core-web-vitals", "eslint:recommended", "plugin:testing-library/react", "prettier"],
+  "plugins": ["testing-library"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "react/jsx-props-no-spreading": "off",
+    "@next/next/no-img-element": "off"
+  }
+}

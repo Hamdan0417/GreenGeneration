@@ -1,0 +1,240 @@
+{
+  "company": {
+    "name": "Green Generation",
+    "name_ar": "الجيل الأخضر",
+    "phone": "+966 59 555 6788",
+    "email": "contact@ggen.sa"
+  },
+  "navigation": {
+    "home": "Home",
+    "story": "Story",
+    "team": "Team",
+    "invest": "Invest",
+    "contact": "Contact",
+    "toggleLang": "العربية",
+    "contactCta": "Contact",
+    "skip": "Skip to content"
+  },
+  "hero": {
+    "title": "Welcome to Green Generation Store",
+    "subtitle": "Your first destination for smart, innovative agricultural solutions!",
+    "primaryCta": "Contact us",
+    "secondaryCta": "Our Story",
+    "badge": "Smart Agri Solutions",
+    "scroll": "Scroll"
+  },
+  "opportunity": {
+    "heading": "Opportunity & Funding",
+    "ask": "We are raising SAR 10,000,000 to scale nationwide.",
+    "oneLiner": "Equipment + AI smart irrigation with localized service and fast delivery."
+  },
+  "kpis": [
+    {
+      "value": "46%",
+      "label": "Gross profit margin"
+    },
+    {
+      "value": "SAR 50K+",
+      "label": "Revenue in under 6 months"
+    },
+    {
+      "value": "36+",
+      "label": "Cities reached"
+    },
+    {
+      "value": "#1",
+      "label": "Beachhead market: Riyadh"
+    }
+  ],
+  "pillars": {
+    "heading": "Five-pillar expansion",
+    "items": [
+      {
+        "title": "Geographic Expansion",
+        "body": "Showrooms in Riyadh, Jeddah, and Dammam for direct sales and rapid logistics support.",
+        "details": "Build immersive showrooms with live demos, local inventory, and service teams to accelerate conversion and retention."
+      },
+      {
+        "title": "Production Line Expansion",
+        "body": "Manufacture pasteurizers and dairy churners to serve customer demand with integrated solutions.",
+        "details": "Invest in localized manufacturing, QA labs, and supplier tooling to unlock healthy margins and resilient supply."
+      },
+      {
+        "title": "AI Smart Irrigation Bundles",
+        "body": "Sensors + controller + SaaS for insights, alerts, and lower water usage.",
+        "details": "Deploy adaptive irrigation powered by field data, bilingual dashboards, and proactive agronomist guidance."
+      },
+      {
+        "title": "Enter Animal Health",
+        "body": "High-quality animal vaccines via strategic partnerships to unlock a vital new revenue stream.",
+        "details": "Secure distribution alliances, training, and cold-chain capabilities to support farms at scale."
+      },
+      {
+        "title": "Brand Strengthening",
+        "body": "Launch branded agriculture and livestock toolkits to cement us as the first-choice destination.",
+        "details": "Create signature kits, multimedia storytelling, and community programs to amplify the Green Generation brand."
+      }
+    ],
+    "cta": "Read more →"
+  },
+  "ctaBlock": {
+    "title": "Let’s build the future of agriculture together",
+    "subtitle": "Contact us to discuss partnership and investment opportunities.",
+    "contacts": [
+      "+966 59 555 6788",
+      "contact@ggen.sa"
+    ]
+  },
+  "story": {
+    "heading": "Our story",
+    "about": "A Saudi limited liability company embedding modern technologies into agriculture and livestock to deliver smart products and services that improve efficiency and quality.",
+    "timelineHeading": "Milestones"
+  },
+  "timeline": {
+    "steps": [
+      {
+        "idx": "1",
+        "date": "4 Jan 2025",
+        "title": "Incorporation",
+        "text": "Green Generation launched with a clear vision to close the technology gap for Saudi farms."
+      },
+      {
+        "idx": "2",
+        "date": "1 May 2025",
+        "title": "Go-to-market",
+        "text": "Our e-commerce store went live with flagship automated milking equipment."
+      },
+      {
+        "idx": "3",
+        "date": "Today",
+        "title": "Record growth & proven profitability",
+        "text": "With SAR 50K+ revenue and 46% margin, we validated the model and are ready to scale."
+      }
+    ]
+  },
+  "philosophy": {
+    "heading": "Philosophy",
+    "vision": "Enable sustainable development projects that secure food systems and improve quality of life.",
+    "mission": "Deliver leading-edge technologies and smart services that maximize quality and productivity.",
+    "valuesLabel": "Values",
+    "values": [
+      "Quality",
+      "Sustainability",
+      "Efficiency",
+      "Growth"
+    ],
+    "visionLabel": "Vision",
+    "missionLabel": "Mission"
+  },
+  "team": {
+    "heading": "Founding team",
+    "members": [
+      {
+        "name": "Hamdan Al-Ghamdi",
+        "role": "Chief Executive Officer"
+      },
+      {
+        "name": "Mohammed Al-Ghamdi",
+        "role": "Chief Operating Officer"
+      },
+      {
+        "name": "Khalid Al-Oudah",
+        "role": "Chief Business Development"
+      }
+    ],
+    "descriptions": [
+      "Founder & CEO steering go-to-market and investor relations.",
+      "Heads operations, supply chain, and customer success excellence.",
+      "Builds strategic partnerships and leads regional showroom rollout."
+    ],
+    "subtitle": "Operators with deep agri-tech, field service, and venture scaling expertise."
+  },
+  "invest": {
+    "title": "Investment & Use of Proceeds",
+    "askLabel": "Funding ask",
+    "ask": "SAR 10,000,000",
+    "rationale": "Scale inventory, launch showrooms, run AI irrigation pilots, and build after-sales.",
+    "tableTab": "Table",
+    "chartTab": "Chart",
+    "legend": "Total must equal 100%",
+    "useOfProceeds": [
+      {
+        "item": "Geographic Expansion (3 showrooms)",
+        "pct": 20,
+        "sar": 2000000
+      },
+      {
+        "item": "Production Line Expansion (Pasteurizers & Churners)",
+        "pct": 35,
+        "sar": 3500000
+      },
+      {
+        "item": "AI Smart Irrigation Pilots (12 sites)",
+        "pct": 15,
+        "sar": 1500000
+      },
+      {
+        "item": "Enter Animal Health (vaccines partnerships)",
+        "pct": 6,
+        "sar": 600000
+      },
+      {
+        "item": "Brand Strengthening (tools, content, PR)",
+        "pct": 8,
+        "sar": 800000
+      },
+      {
+        "item": "Team & Field Service",
+        "pct": 10,
+        "sar": 1000000
+      },
+      {
+        "item": "Working Capital & Reserve",
+        "pct": 6,
+        "sar": 600000
+      }
+    ],
+    "columnTitle": "Line item"
+  },
+  "roi": {
+    "heading": "ROI mini-calculator",
+    "sitesLabel": "Sites",
+    "priceLabel": "Water price (SAR/m³)",
+    "efficiencyLabel": "Efficiency gain %",
+    "estimate": "Estimated annual savings",
+    "disclaimer": "Illustrative only. Actual savings depend on baseline consumption and site performance.",
+    "reset": "Reset"
+  },
+  "contact": {
+    "headline": "Let’s build the future of agriculture together",
+    "sub": "Contact us to discuss partnership and investment opportunities.",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email"
+  },
+  "form": {
+    "name": "Full name",
+    "company": "Company",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "submit": "Submit",
+    "success": "Message received! We will be in touch shortly.",
+    "error": "We couldn't send your message. Please try again.",
+    "validation": {
+      "name": "Name is required",
+      "email": "Enter a valid email",
+      "message": "Please include a bit more detail",
+      "phone": "Enter a valid phone number",
+      "company": "Company name is required"
+    }
+  },
+  "footer": {
+    "addressLabel": "Contact",
+    "copyright": "© 2025 Green Generation. All rights reserved.",
+    "darkMode": "Dark mode"
+  },
+  "homeKpis": {
+    "heading": "Performance momentum",
+    "subheading": "Metrics refreshed from our latest operating dashboard."
+  }
+}
