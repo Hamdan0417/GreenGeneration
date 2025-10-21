@@ -22,6 +22,24 @@
             transform: translateY(-8px);
             box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
         }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: #10B981; /* emerald-500 */
+            top: 2.5rem;
+            bottom: -2.5rem;
+            left: 1.25rem;
+            transform: translateX(-50%);
+        }
+        .rtl .timeline-item::before {
+            left: auto;
+            right: 1.25rem;
+            transform: translateX(50%);
+        }
+        .timeline-item:last-child::before {
+            display: none;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -57,6 +75,78 @@
                 <h2 class="text-4xl md:text-6xl font-extrabold text-emerald-800 mb-4" data-lang-en="Smart & Innovative Agricultural Solutions" data-lang-ar="حلول زراعية ذكية ومبتكرة!">مرحباً بكم في متجر الجيل الأخضر</h2>
                 <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8" data-lang-en="Welcome to Green Generation – your premier destination for smart and innovative agricultural solutions!" data-lang-ar="وجهتكم الأولى للحلول الزراعية الذكية والمبتكرة!">وجهتكم الأولى للحلول الزراعية الذكية والمبتكرة!</p>
                 <a href="#contact" class="bg-emerald-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-emerald-700 transition-colors duration-300" data-lang-en="Contact Us" data-lang-ar="تواصل معنا">تواصل معنا</a>
+            </div>
+        </section>
+        
+        <!-- Our Story Section -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4" data-lang-en="Our Story" data-lang-ar="قصتنا">قصتنا</h2>
+                    <p class="text-gray-600 mb-12" data-lang-en="We are a Saudi institution dedicated to integrating modern technology into the agricultural and animal sectors. We provide smart products and services designed to enhance efficiency and quality." data-lang-ar="مؤسسة سعودية تعمل على غرس التقنيات الحديثة في المجال الزراعي والحيواني لنضع بين أيديكم منتجات وخدمات ذكية تساهم في تحسين الكفاءة والجودة.">مؤسسة سعودية تعمل على غرس التقنيات الحديثة في المجال الزراعي والحيواني لنضع بين أيديكم منتجات وخدمات ذكية تساهم في تحسين الكفاءة والجودة.</p>
+                </div>
+                
+                <!-- Timeline -->
+                <div class="max-w-2xl mx-auto">
+                    <div class="space-y-12">
+                        <!-- Item 1: Foundation -->
+                        <div class="relative timeline-item">
+                            <div class="flex items-center">
+                                <div class="z-10 flex items-center justify-center w-10 h-10 bg-emerald-600 rounded-full text-white font-bold">1</div>
+                                <div class="flex-1 rtl:mr-6 ltr:ml-6 bg-white p-6 rounded-xl shadow-lg">
+                                    <p class="text-sm text-gray-500" data-lang-en="January 4, 2025" data-lang-ar="4 يناير 2025">4 يناير 2025</p>
+                                    <h3 class="text-xl font-bold mt-1" data-lang-en="The Foundation" data-lang-ar="التأسيس">التأسيس</h3>
+                                    <p class="mt-2 text-gray-600" data-lang-en="Green Generation was established with a capital of SAR 10,000 and a vision to bridge the technology gap for Saudi Arabia's farms." data-lang-ar="تأسست شركة الجيل الأخضر برأس مال قدره 10,000 ريال سعودي ورؤية واضحة لسد الفجوة التقنية في المزارع السعودية.">تأسست شركة الجيل الأخضر برأس مال قدره 10,000 ريال سعودي ورؤية واضحة لسد الفجوة التقنية في المزارع السعودية.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 2: Launch -->
+                         <div class="relative timeline-item">
+                            <div class="flex items-center">
+                                <div class="z-10 flex items-center justify-center w-10 h-10 bg-emerald-600 rounded-full text-white font-bold">2</div>
+                                <div class="flex-1 rtl:mr-6 ltr:ml-6 bg-white p-6 rounded-xl shadow-lg">
+                                    <p class="text-sm text-gray-500" data-lang-en="May 1, 2025" data-lang-ar="1 مايو 2025">1 مايو 2025</p>
+                                    <h3 class="text-xl font-bold mt-1" data-lang-en="E-commerce Launch" data-lang-ar="بدء المبيعات">بدء المبيعات</h3>
+                                    <p class="mt-2 text-gray-600" data-lang-en="Our online store went live, successfully introducing our flagship line of automated milking machines to the market." data-lang-ar="تم إطلاق متجرنا الإلكتروني بنجاح، مقدماً للسوق خط منتجاتنا الرائد من الحلابات الأوتوماتيكية.">تم إطلاق متجرنا الإلكتروني بنجاح، مقدماً للسوق خط منتجاتنا الرائد من الحلابات الأوتوماتيكية.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 3: Success -->
+                         <div class="relative timeline-item">
+                            <div class="flex items-center">
+                                <div class="z-10 flex items-center justify-center w-10 h-10 bg-emerald-600 rounded-full text-white font-bold">3</div>
+                                <div class="flex-1 rtl:mr-6 ltr:ml-6 bg-white p-6 rounded-xl shadow-lg">
+                                    <p class="text-sm text-gray-500" data-lang-en="Today" data-lang-ar="اليوم">اليوم</p>
+                                    <h3 class="text-xl font-bold mt-1" data-lang-en="Market Validation" data-lang-ar="النجاح الأولي">النجاح الأولي</h3>
+                                    <p class="mt-2 text-gray-600" data-lang-en="With over SAR 50K in revenue and a 46% profit margin, we have proven our business model and are ready to scale." data-lang-ar="بإيرادات تجاوزت 50 ألف ريال وهامش ربح 46%، أثبتنا نجاح نموذج عملنا ونحن على استعداد تام للتوسع.">بإيرادات تجاوزت 50 ألف ريال وهامش ربح 46%، أثبتنا نجاح نموذج عملنا ونحن على استعداد تام للتوسع.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Philosophy -->
+                <div class="mt-20">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div class="text-center lg:text-left rtl:lg:text-right">
+                             <h3 class="text-2xl md:text-3xl font-bold mb-4" data-lang-en="Our Philosophy" data-lang-ar="فلسفتنا">فلسفتنا</h3>
+                             <p class="text-emerald-700 font-bold mb-2" data-lang-en="Our Vision" data-lang-ar="رؤيتنا">رؤيتنا</p>
+                             <p class="text-gray-600 mb-6" data-lang-en="To enable sustainable development projects that achieve national food security and improve the quality of life." data-lang-ar="تمكين مشاريع تنموية مستدامة تحقق الأمن الغذائي وتحسن من جودة الحياة.">تمكين مشاريع تنموية مستدامة تحقق الأمن الغذائي وتحسن من جودة الحياة.</p>
+                             <p class="text-emerald-700 font-bold mb-2" data-lang-en="Our Mission" data-lang-ar="رسالتنا">رسالتنا</p>
+                             <p class="text-gray-600" data-lang-en="To excel in providing the best technical means and smart services to achieve superior quality and production efficiency." data-lang-ar="التميز بتقديم أفضل الوسائل التقنية والخدمات الذكية لتحقيق الجودة والكفاءة الانتاجية.">التميز بتقديم أفضل الوسائل التقنية والخدمات الذكية لتحقيق الجودة والكفاءة الانتاجية.</p>
+                        </div>
+                        <div>
+                            <p class="text-emerald-700 font-bold mb-4 text-center lg:text-left rtl:lg:text-right" data-lang-en="Our Values" data-lang-ar="قيمنا">قيمنا</p>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-emerald-100 text-emerald-900 p-6 rounded-lg text-center font-bold text-lg" data-lang-en="Quality" data-lang-ar="الجودة">الجودة</div>
+                                <div class="bg-emerald-100 text-emerald-900 p-6 rounded-lg text-center font-bold text-lg" data-lang-en="Sustainability" data-lang-ar="الاستدامة">الاستدامة</div>
+                                <div class="bg-emerald-100 text-emerald-900 p-6 rounded-lg text-center font-bold text-lg" data-lang-en="Efficiency" data-lang-ar="الكفاءة">الكفاءة</div>
+                                <div class="bg-emerald-100 text-emerald-900 p-6 rounded-lg text-center font-bold text-lg" data-lang-en="Growth" data-lang-ar="النمو">النمو</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
